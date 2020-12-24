@@ -1,0 +1,120 @@
+html {
+    font-family: "Langar", cursive;
+    height: 100%;
+    width: 100%;
+}
+body {
+    margin: 40px 0;
+    padding: 0;
+    min-height: 100%;
+    min-width: 100%;
+    position: relative;
+    display: grid;
+    place-items: center;
+    background-image: url("https://i.ibb.co/KwDLCsj/wallpaper.jpg");
+    background-position: top right;
+}
+* {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: content-box;
+}
+.overlay {
+    border-radius: 150px 100px 100px 120px / 130px 140px 120px 100px;
+}
+.profile-card {
+    width: 250px;
+    height: 370px;
+    padding: 34px;
+    margin: 50px auto;
+    text-align: center;
+    border: 5px solid transparent;
+    border-radius: 150px 100px 100px 120px / 130px 140px 120px 100px;
+    box-shadow: 3px 7px 34px -12px #ffa01b,
+                inset 0 0 22px -5px rgba(56,78,96,.7);
+    position: relative;
+    background-image: linear-gradient(to bottom, #fcfcfc, transparent, #fcfcfc);
+    background-position: top right;
+    transition: ease-out;
+    perspective: 400px;
+}
+.profile-card:hover .avatar > img,
+.overlay:hover .profile-card{
+    border:5px solid #ffa01b;
+    color: #ffa01b;
+    box-shadow: 0 -5px 20px -5px currentColor;
+    background-image: linear-gradient(to bottom, #ffa41b, transparent, #ffa41b);
+}
+.avatar {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.avatar > img {
+    border-radius: 50%;
+    height: 150px;
+    border: 5px solid transparent;
+    color: #5a4c5a;
+    box-shadow: 0 -5px 20px -5px currentColor;
+}
+.profile-card > h1, p {
+    position: relative;
+    top: 30px;
+    line-height: 1.4;
+    letter-spacing: 1.2px;
+    color: #090909;
+    transition: ease-out;
+    transform-origin: top center;
+}
+.profile-card > h1 {
+    font-size: 1.6em;
+}
+.profile-card > p {
+    text-align: justify;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+}
+.profile-card > h1:hover {
+    color: #fa9845;
+    text-shadow: 0 3px 5px #040404;
+    animation: spring 1s ease-out;
+}
+@keyframes spring {
+    0,20% {
+        transform: scale(0)rotateY(-360deg);
+    }
+    50% {
+        transform: scale(.5)rotateY(0);
+    }
+    100% {
+        transform: scale(1)rotateY(360deg);
+    }
+}
+.profile-card > p:hover {
+    color: #fa9845;
+    text-shadow: 2px 3px 5px #040404;
+    font-weight: bold;
+}
+button {
+    margin: auto auto 20px;
+    padding:12px;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    background-color: dodgerblue;
+    outline: none;
+    font-size: 1.2em;
+    transition: ease-out;
+    font-family: "Nunito", sans-serif;
+    box-shadow: 3px 5px 12px #232323;
+}
+button:hover {
+    background-color: forestgreen;
+    box-shadow: 3px 5px 12px #dcdcdc;
+}
+button a {
+    text-decoration: none;
+    color: white;
+}
