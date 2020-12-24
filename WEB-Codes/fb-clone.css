@@ -1,0 +1,239 @@
+:root {
+  height: 100%;
+  width: 100%;
+  --primary-dark: black;
+  --primary-light: white;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100%;
+  min-width: 100%;
+  background-color: var( --primary-dark );
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  user-select: none;
+  -ms-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+}
+
+.facebook-mobile-version-container {
+  height: max-content;
+  width: max-content;
+  margin: auto;
+  border-radius: 12px;
+  position: relative;
+}
+
+.facebook-mobile-version-container > div {
+  background-color: #454545;
+}
+
+header.top-header {
+  font-family: tahoma,verdana;
+  color: var( --primary-light );
+  padding: 7px 0 0 12px;
+  margin: auto 15px;
+  border-bottom: 1px solid grey;
+}
+
+.top-app-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header.top-header > .top-app-bar > h1 {
+  padding-right: 70px;
+  cursor: pointer;
+}
+
+header >.top-app-bar > i {
+  font-size: 1.5em;
+  background-color: grey;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: auto 7px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+header > .header-options-bar {
+  padding: 23px 4px 12px;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  margin: auto 7px;
+}
+
+header > .header-options-bar > i {
+  cursor: pointer;
+}
+
+.profile-option-bar {
+  position: relative;
+  border-bottom: .5px solid grey;
+}
+
+.profile-option-bar > .top-option-bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 12px auto;
+}
+
+.profile-option-bar > .top-option-bar > .avatar {
+  border-radius: 50%;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  position: relative;
+}
+
+.profile-option-bar > .top-option-bar > .avatar::after {
+  content: '';
+  position: absolute;
+  height: 7px;
+  width: 7px;
+  background-color: lime;
+  border-radius: 50%;
+  bottom: 5%;
+  left: 75%;
+}
+
+.profile-option-bar > .top-option-bar > .avatar img {
+  border-radius: 50%;
+  width: inherit;
+  border: 1px solid grey;
+}
+
+.profile-option-bar > .top-option-bar > .post-field {
+  height: 45px;
+  width: 55%;
+}
+
+.profile-option-bar > .top-option-bar > .post-field input {
+  height: 100%;
+  width: 100%;
+  padding: 0 5px 0 7px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  background-color: inherit;
+  color: whitesmoke;
+}
+
+.profile-option-bar > .top-option-bar > .post-field input:hover {
+  outline: 0;
+}
+
+.media-upload > i.fal.fa-images {
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.post-features-bar {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 12px auto;
+}
+
+.post-features-bar > div {
+  color: white;
+  cursor: pointer;
+  padding: 7px;
+}
+
+.post-features-bar > div:not(.room) {
+  border-right: 1px solid grey;
+  padding-right: 25px;
+}
+
+.post-features-bar > .text > i {
+  color: blue;
+}
+
+.post-features-bar > .live-video > i {
+  color: #ff4572;
+}
+
+.post-features-bar > .room > i {
+  color: inherit;
+}
+
+.stories {
+    display: flex;
+    position: relative;
+}
+
+.stories > div {
+    height: 105px;
+    width: 65px;
+    border-radius: 7px;
+    margin: 3px 12px;
+}
+
+.stories > div img {
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+}
+
+.posts > div {
+    display: flex;
+    align-items: center;
+    margin: 5px 12px;
+    color: white;
+    padding-top: 12px;
+}
+
+.posts > div .gravatar {
+    height: 55px;
+    width: 55px;
+}
+
+.posts > .post1 .gravatar img {
+    height: inherit;
+    width: inherit;
+    border-radius: 50%;
+}
+
+.posts > div  h2 {
+    margin-right: 35%;
+    padding-left: 12px;
+    font-size: large;
+}
+
+.posts > .large-image {
+    width: 100%;
+    height: auto;
+    margin: 12px 0;
+    
+    
+}
+
+.posts > .large-image img {
+    width: inherit;
+    height: inherit;
+}
+
+i:hover {
+    color: #77ff34;
+    filter: drop-shadow( 0 0 5px #77ff45);
+}
+
